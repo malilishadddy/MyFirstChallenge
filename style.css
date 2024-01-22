@@ -7,6 +7,8 @@ body {
     font-family: "Figtree",sans-serif;
     background:hsl(47, 88%, 63%);
   }
+.container{
+   display: grid;
   .card {
     width: 335px;
     padding: 20px;
@@ -50,6 +52,14 @@ body {
  a:hover{
     color:hsl(47, 88%, 63%) ;
  }
+ a:visited{
+   color: black;
+ }
  .content{
     color: grey;
+ }
+@media only screen and (max-width:550px){
+   body{
+      grid-template-columns: 1fr 2fr 1fr;
+   }
  }
